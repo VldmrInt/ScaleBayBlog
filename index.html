@@ -19,60 +19,41 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="ScaleBay Blog">
-        <span class="brand-mark">SB</span>
-        <span>
-          <strong>ScaleBay Blog</strong>
-          <small>Новости проекта</small>
-        </span>
+      <a class="brand" href="#top" aria-label="ScaleBay Team Blog">
+        <strong>Scalebay Team Blog</strong>
+        <span aria-hidden="true">🚚</span>
       </a>
-      <nav class="top-nav" aria-label="Разделы">
-        <a href="#latest">Лента</a>
-        <a href="#about">О проекте</a>
-      </nav>
     </header>
 
     <main id="top">
-      <section class="intro" id="about">
-        <div>
-          <p class="eyebrow">Официальные обновления</p>
-          <h1>Новости ScaleBay в одной простой ленте</h1>
-        </div>
-        <p>
-          Здесь собраны текущие публикации о перезапуске ScaleBay, новом движке
-          и ближайших изменениях платформы.
-        </p>
-      </section>
-
       <section class="feed-shell" id="latest" aria-label="Лента публикаций">
-        <div class="feed-heading">
-          <h2>Лента</h2>
-          <p>Анонсы, новости запуска и важные заметки для сообщества.</p>
+        <div class="timeline-note" aria-label="Порядок публикаций">
+          <span>старые</span>
+          <i aria-hidden="true"></i>
+          <strong>новые</strong>
+          <p>Публикации идут по хронологии: от старых к новым.</p>
         </div>
 
         <div class="feed" id="feed">
           <article class="post" data-post="news">
+            <header class="post-header">
+              <div class="post-meta">
+                <time datetime="2026-06-15">15 июня 2026 г.</time>
+              </div>
+              <h1>Немного новостей про новый ScaleBay</h1>
+            </header>
+
             <img
               src="assets/scalebay-news.png"
               alt="Новости ScaleBay"
               width="1200"
               height="675"
-              loading="eager"
+              loading="lazy"
             />
             <div class="post-body">
-              <div class="post-meta">
-                <time datetime="2026-06-15">15 июня 2026</time>
-                <span>Новости</span>
-              </div>
-              <h2>Немного новостей про новый ScaleBay</h2>
-              <p class="lead">
-                Краткие новости о текущем состоянии нового ScaleBay: что уже
-                работает, что временно отключено и чего ожидать дальше.
-              </p>
-
               <p>
-                Друзья, делимся короткими новостями о текущем состоянии нового
-                ScaleBay.
+                Друзья, делимся короткими новостями о
+                <a href="#big-update">текущем состоянии нового ScaleBay</a>.
               </p>
               <p>
                 Мы продолжаем готовить обновлённую платформу к запуску и хотим
@@ -82,10 +63,10 @@
                 на первом этапе могут работать неидеально.
               </p>
 
-              <h3>Что изменится на старте</h3>
+              <h2 id="news-start">Что изменится на старте</h2>
               <p>
-                На новом сайте временно не будет отдельной информации о доставке
-                и оплате.
+                <a href="#big-update">На новом сайте</a> временно не будет
+                отдельной информации о доставке и оплате.
               </p>
               <p>
                 На старой версии сайта такие разделы присутствуют, поскольку
@@ -116,10 +97,10 @@
                 хорошего состояния уже вместе с пользователями.
               </p>
 
-              <h3>Главное - наш собственный движок</h3>
+              <h2 id="news-engine">Главное — наш собственный движок</h2>
               <p>
-                Самое важное в этом обновлении - то, что ScaleBay переходит на
-                собственный движок.
+                Самое важное в этом обновлении - то, что
+                <a href="#big-update">ScaleBay переходит на собственный движок</a>.
               </p>
               <p>
                 Это даёт нам гораздо больше свободы. Ошибки станет проще
@@ -134,32 +115,29 @@
               </p>
               <p>
                 Мы будем двигаться поэтапно и внимательно прислушиваться к вашим
-                отзывам. Именно они помогут сделать новый ScaleBay удобнее,
+                отзывам. Именно они помогут
+                <a href="#big-update">сделать новый ScaleBay</a> удобнее,
                 надёжнее и ближе к тому формату, который нужен сообществу.
               </p>
             </div>
           </article>
 
-          <article class="post" data-post="update">
+          <article class="post" id="big-update" data-post="update">
+            <header class="post-header">
+              <div class="post-meta">
+                <time datetime="2026-01-01">9 июня 2026 г.</time>
+              </div>
+              <h1>Scalebay готовится к большому обновлению</h1>
+            </header>
+
             <img
               src="assets/scalebay-big-update.png"
               alt="Обновление Scalebay"
               width="1200"
               height="675"
-              loading="lazy"
+              loading="eager"
             />
             <div class="post-body">
-              <div class="post-meta">
-                <time datetime="2026-01-01">1 января 2026</time>
-                <span>Анонс</span>
-              </div>
-              <h2>Scalebay готовится к большому обновлению</h2>
-              <p class="lead">
-                Мы готовим существенное обновление сайта Scalebay.ru -
-                перезапуск классических механик аукциона с сохранением сути
-                проекта.
-              </p>
-
               <p>
                 Друзья, мы готовим существенное обновление сайта Scalebay.ru.
               </p>
@@ -181,7 +159,7 @@
                 платформы.
               </p>
 
-              <h3>Что мы хотим сделать в первую очередь</h3>
+              <h2 id="update-first">Что мы хотим сделать в первую очередь</h2>
               <p>
                 Главная задача на первом этапе - перезапустить классические
                 механики аукциона Scalebay.
@@ -199,7 +177,7 @@
                 Scalebay.
               </p>
 
-              <h3>Что будет дальше</h3>
+              <h2 id="update-next">Что будет дальше</h2>
               <p>
                 После обновления базовых аукционных возможностей мы планируем
                 постепенно наращивать новую функциональность.
@@ -218,7 +196,7 @@
           </article>
         </div>
 
-        <div class="sentinel" id="sentinel" aria-hidden="true"></div>
+        <p class="feed-end" id="feed-end">Это все опубликованные статьи.</p>
       </section>
     </main>
 
@@ -226,7 +204,5 @@
       <span>ScaleBay Blog</span>
       <span>Новости проекта</span>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
