@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.astro/
+
+*.log
+*-preview.png
+scalebay-blog-browser.png
+scalebay-blog.html
+rules-faq-updated.md
+
+.env
+.env.*

@@ -1,0 +1,45 @@
+:root {
+  --sl-color-accent-low: #d7eee5;
+  --sl-color-accent: #207a60;
+  --sl-color-accent-high: #12382f;
+}
+
+:root[data-theme='dark'] {
+  --sl-color-accent-low: #143b32;
+  --sl-color-accent: #45c39b;
+  --sl-color-accent-high: #c5f4e3;
+}
+
+.hero {
+  align-items: start;
+}
+
+.homepage-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.homepage-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  background: var(--sl-color-bg-nav);
+}
+
+.homepage-card:hover {
+  border-color: var(--sl-color-accent);
+}
+
+.homepage-card strong {
+  color: var(--sl-color-white);
+  font-size: var(--sl-text-lg);
+}
+
+.homepage-card span {
+  color: var(--sl-color-gray-2);
+}
